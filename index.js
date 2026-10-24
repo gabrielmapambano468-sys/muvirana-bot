@@ -1,3 +1,7 @@
+const express = require('express');
+const app = express();
+app.get('/', (req, res) => res.send('MUVIRANA BOT IS LIVE!'));
+app.listen(process.env.PORT || 3000, () => console.log('Web server on'));
 const { Telegraf } = require('telegraf');
 const axios = require('axios');
 const { createClient } = require('@supabase/supabase-js');
